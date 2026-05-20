@@ -1,40 +1,36 @@
-1. # Sistem Informasi Akademik Laravel
+# Sistem Informasi Akademik Laravel
 
-Sistem Informasi Akademik berbasis Laravel yang digunakan untuk mengelola data mahasiswa dan dosen secara mudah dan terstruktur.  
-Project ini dibuat menggunakan framework Laravel dan Bootstrap 5 dengan fitur CRUD lengkap.
+Sistem Informasi Akademik berbasis Laravel untuk mengelola data mahasiswa dan dosen secara mudah, cepat, dan terstruktur. Aplikasi ini dibangun dengan Laravel 10, Bootstrap 5, dan menyediakan fitur CRUD lengkap.
 
-## Fitur Utama
+## 🚀 Fitur Utama
 
-### Manajemen Mahasiswa
+### Mahasiswa
 
 - Menambahkan data mahasiswa
 - Menampilkan data mahasiswa
 - Mengedit data mahasiswa
 - Menghapus data mahasiswa
-- Detail data mahasiswa
-- Validasi form input
+- Melihat detail data mahasiswa
+- Validasi input form
 
-### Manajemen Dosen
+### Dosen
 
 - Menambahkan data dosen
 - Menampilkan data dosen
 - Mengedit data dosen
 - Menghapus data dosen
-- Detail data dosen
-- Validasi form input
+- Melihat detail data dosen
+- Validasi input form
 - NIK tidak dapat diubah saat edit data
 
 ### Tampilan
 
 - Responsive menggunakan Bootstrap 5
-- Navbar modern
-- Halaman Home
-- Card dan tabel modern
-- Alert notifikasi sukses
+- Navbar modern dan fixed-top
+- Halaman Home yang bersih
+- Kartu, tabel, dan alert notifikasi yang menarik
 
----
-
-## Teknologi yang Digunakan
+## 🧰 Teknologi yang Digunakan
 
 - Laravel
 - PHP
@@ -42,14 +38,11 @@ Project ini dibuat menggunakan framework Laravel dan Bootstrap 5 dengan fitur CR
 - MySQL
 - Blade Template
 
----
+## ✨ Deskripsi
 
-## Deskripsi
+Aplikasi ini dirancang untuk memudahkan pengelolaan data akademik dasar, termasuk pendaftaran, pembaruan, dan penghapusan data mahasiswa serta dosen.
 
-sistem ini dibuat untuk memudahkan pengelolaan data akademik dasar, termasuk pendaftaran, pembaruan, dan
-penghapusan data mahasiswa serta dosen
-
-## Struktur Fitur CRUD
+## 📌 Struktur Data
 
 ### Mahasiswa
 
@@ -73,57 +66,74 @@ Data dosen yang dikelola:
 - Program Studi
 - Alamat
 
----
+## 🛠️ Instalasi
 
-## Instalasi Project
+Ikuti langkah berikut untuk menjalankan aplikasi secara lokal.
 
-### 1. Clone Repository
+1. Pastikan PHP, Composer, Node.js, dan npm sudah terpasang
+2. Salin file konfigurasi lingkungan
 
 ```bash
-git clone https://github.com/username/project-laravel.git
+copy .env.example .env
+```
 
-## 2. Masuk ke Folder Project
+3. Masuk ke folder project
 
+```bash
 cd project-laravel
+```
 
-## 3. Install Dependency
+3. Install dependency
 
+```bash
 composer install
+npm install
+npm run build
+```
 
-## 4. Copy File Environment
+4. Generate application key
 
-cp .env.example .env
-
-## 5. Generate Key
-
+```bash
 php artisan key:generate
+```
 
-## 6. Atur Database di .env
+5. Atur konfigurasi database di `.env`
 
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
 DB_DATABASE=nama_database
-DB_USERNAME=root
-DB_PASSWORD=
+DB_USERNAME=username
+DB_PASSWORD=password
+```
 
-## 7. Jalankan Migration
+6. Jalankan migration dan seed Database
 
+```bash
 php artisan migrate
+php artisan db:seed
+```
 
-## 8. Jalankan Server
+7. Jalankan server
 
+```bash
 php artisan serve
+```
 
-## 9. Buka browser:
+8. Buka browser
 
+```text
 http://127.0.0.1:8000
+```
 
-## Struktur Singkat Folder
+## 📁 Struktur Singkat Folder
 
 - `app/Models` : model `Mahasiswa` dan `Dosen`
 - `app/Http/Controllers` : controller untuk logika aplikasi
 - `resources/views` : tampilan aplikasi
 - `routes/web.php` : rute aplikasi
 
-## Penulis
+## ✍️ Penulis
 
 Resti Febriani
-```
