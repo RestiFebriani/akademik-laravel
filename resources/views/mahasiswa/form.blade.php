@@ -162,6 +162,12 @@
 
                             </button>
 
+                            <a href="{{ route('mahasiswa.index') }}" class="btn btn-secondary">
+
+                                Kembali
+
+                            </a>
+
                         </form>
 
                     </div>
