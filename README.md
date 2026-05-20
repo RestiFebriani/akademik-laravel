@@ -82,37 +82,37 @@ Data dosen yang dikelola:
 ```bash
 git clone https://github.com/username/project-laravel.git
 
-2. Masuk ke Folder Project
+## 2. Masuk ke Folder Project
 
 cd project-laravel
 
-3. Install Dependency
+## 3. Install Dependency
 
 composer install
 
-4. Copy File Environment
+## 4. Copy File Environment
 
 cp .env.example .env
 
-5. Generate Key
+## 5. Generate Key
 
 php artisan key:generate
 
-6. Atur Database di .env
+## 6. Atur Database di .env
 
 DB_DATABASE=nama_database
 DB_USERNAME=root
 DB_PASSWORD=
 
-7. Jalankan Migration
+## 7. Jalankan Migration
 
 php artisan migrate
 
-8. Jalankan Server
+## 8. Jalankan Server
 
 php artisan serve
 
-9. Buka browser:
+## 9. Buka browser:
 
 http://127.0.0.1:8000
 
@@ -122,4 +122,8 @@ http://127.0.0.1:8000
 - `app/Http/Controllers` : controller untuk logika aplikasi
 - `resources/views` : tampilan aplikasi
 - `routes/web.php` : rute aplikasi
+
+## Penulis
+
+Resti Febriani
 ```
